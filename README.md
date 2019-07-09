@@ -6,6 +6,7 @@
 |name|string|null: false|
 |mail|string|null: false|
 |password|string|null: false|
+
 ### Association
 - has_many :comments
 - has_many :chats, through:  :teams
@@ -15,6 +16,7 @@
 |------|----|-------|
 |group|string|null: false|
 |text|text|null: false|
+
 ### Association
 - has_many :comments
 - has_many :users, through: :teams
@@ -24,6 +26,7 @@
 |------|----|-------|
 |user_id|integer|null: false, foreign_key: true|
 |chat_id|integer|null: false, foreign_key: true|
+
 ### Association
 - belongs_to :user
 - belongs_to :chat
@@ -34,6 +37,7 @@
 |text|text|null: false|
 |user_id|integer|null: false, foreign_key: false|
 |chat_id|integer|null: false, foreign_key: false|
+
 ### Association
 - belongs_to :user
 - belongs_to :chat
