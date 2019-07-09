@@ -3,44 +3,46 @@
 ## usersテーブル
 |Column|Type|Options|
 |------|----|-------|
-|name|string|null: false|
+|name|string|null: false, index: true|
 |mail|string|null: false|
 |password|string|null: false|
 
 ### Association
+- has_many :teams
 - has_many :comments
-- has_many :chats, through:  :teams
+- has_many :groups, through:  :teams
 
-## chatsテーブル
+## groupsテーブル
 |Column|Type|Options|
 |------|----|-------|
-|group|string|null: false|
-|text|text|null: false|
+|name|string|null: false|
 
 ### Association
+- has_many :teams
 - has_many :comments
 - has_many :users, through: :teams
 
 ## teamsテーブル
 |Column|Type|Options|
 |------|----|-------|
-|user_id|integer|null: false, foreign_key: true|
-|chat_id|integer|null: false, foreign_key: true|
+|user_id|references|null: false, foreign_key: true|
+|group_id|references|null: false, foreign_key: true|
 
 ### Association
 - belongs_to :user
-- belongs_to :chat
+- belongs_to :group
 
 ## commentsテーブル
 |Column|Type|Options|
 |------|----|-------|
-|text|text|null: false|
-|user_id|integer|null: false, foreign_key: false|
-|chat_id|integer|null: false, foreign_key: false|
+|text|text||
+|image|image||
+|user_id|references|null: false, foreign_key: false|
+|group_id|references|null: false, foreign_key: false|
 
 ### Association
 - belongs_to :user
-- belongs_to :chat
+- belongs_to :group
 
 
 This README would normally document whatever steps are necessary to get the
