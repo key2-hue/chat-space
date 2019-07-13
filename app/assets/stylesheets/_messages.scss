@@ -1,0 +1,38 @@
+
+
+.currentName {
+  height: $sizeC;
+  background-color: #253141;
+  width: $sizeA;
+  @include pLeft();
+  float: left;
+  position: relative;
+  &__user {
+    font-size: 16px;
+    @include white();
+    line-height: $sizeC;
+    &--edit{
+      content: none;
+      float: right;
+      position:absolute;
+      right: 40px;
+      top: 42px;
+    }
+    &--cog{
+        content: none;
+        float: right;
+        position:absolute;
+        top: 42px;
+        right: 20px;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
