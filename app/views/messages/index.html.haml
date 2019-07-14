@@ -3,9 +3,9 @@
 
 .currentName
   %h3.currentName__user test-user
-  %a{:href => "#"}
+  =link_to "#" do
     %i.currentName__user.currentName__user--edit.fa.fa-edit
-  %a{:href => "#"}
+  =link_to "#" do
     %i.currentName__user.currentName__user--cog.fa.fa-cog
     
 
@@ -20,7 +20,8 @@
 .chat
   %h2.chat__name test-group
   %h3.chat__users Members seo neko
-  %a.chat__edit{:href => '#'} Edit
+  =link_to "#" do
+    .chat__edit Edit
 
 .user
   %ul.user__name 
@@ -35,7 +36,8 @@
 
 .submit
   %form 
-    %input.submit__type{:placeholder => 'type a message'}
-    %a{:href => "#"}
+    %input.submit__type{placeholder: 'type a message'}
+    =link_to "#" do
       %i.submit__type.submit__type--image.fa.fa-image
-    %button.submit__button{:onclick => "location.href='#'"} Send
+    =link_to "#" do
+      %button.submit__button Send
