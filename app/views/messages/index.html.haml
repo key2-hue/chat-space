@@ -20,10 +20,13 @@
             = group.show_last_message
   .right
     .chat
-      %h2.chat__name test-group
-      %h3.chat__users Members seo neko
-      =link_to edit_group_path(current_user) do
+      %h2.chat__name 
+        = @group.name
+      %h3.chat__users 
+        = @group.users.pluck(:name).join(",")
+      =link_to edit_group_path(@group) do
         .chat__edit Edit
+    
     .bottom
       .messages
         =render @messages
