@@ -18,6 +18,8 @@
       left: calc(100% - 160px);
     }
   }
+
+  
   &__button {
     width: $sizeC;
     height: 50px;
@@ -26,5 +28,18 @@
     background-color: $back;
     color: white;
     font-size: 20px;
+    position: absolute;
+    top: 0;
+    right: 0;
   }
+}
+
+.icon {
+    position: absolute;
+    top: 20px;
+    right: 110px;
+}
+
+.hidden {
+  display: none;
 }

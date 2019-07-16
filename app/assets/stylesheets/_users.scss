@@ -1,10 +1,14 @@
-.user {
+.messages {
   @include pRight();
   background-color: #fafafa;
   width: $sizeB;
   height: 576px;
   padding-top: 6px;
-  &__name_user {
+  overflow: scroll;
+}
+
+.upper-message {
+  &__user-name {
     float: left;
     font-size: 16px;
     font-weight: bold;
@@ -12,13 +16,25 @@
     padding-top: 40px;
     padding-bottom: 10px;
   }
-  &__name_date {
+  &__date {
     float: left;
     @include gray();
     padding-left: 10px;
     padding-top: 44px;
   }
-  &__comment {
+}
+
+.lower-message {
+  &__content {
     clear: both;
   }
+
+  &__image {
+    display: block;
+    padding-top: 5px;
+    width: 100px;
+    height: 100px;
+  }
 }
+  
+ 
