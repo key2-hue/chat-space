@@ -1,0 +1,22 @@
+.group {
+  background-color: #2f3e51;
+  width: $sizeA;
+  height: calc(100vh - 100px);
+  @include pLeft();
+  padding-top: 20px;
+  overflow: scroll;
+  &__link {
+    text-decoration: none;
+  }
+  &__name {
+    font-size: 15px;
+    @include white();
+    padding-bottom: 5px;
+  }
+
+  &__message {
+    font-size: 11px;
+    @include white();
+    padding-bottom: 40px;
+  }
+}
