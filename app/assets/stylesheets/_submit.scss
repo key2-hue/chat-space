@@ -1,10 +1,7 @@
 .submit {
   background-color: #EEEEEE;
-  height: 90px;
+  height: calc(100% - 576px);
   width: $sizeB;
-  position: absolute;
-  left: 300px;
-  bottom: 0;
   @include pRight();
   padding-top: 20px;
   &__type {
@@ -17,10 +14,12 @@
     &--image {
       position: absolute;
       width: 0;
-      top: 40px;
-      left: calc(100% - 180px);
+      top: 20px;
+      left: calc(100% - 160px);
     }
   }
+
+  
   &__button {
     width: $sizeC;
     height: 50px;
@@ -29,5 +28,18 @@
     background-color: $back;
     color: white;
     font-size: 20px;
+    position: absolute;
+    top: 0;
+    right: 0;
   }
+}
+
+.icon {
+    position: absolute;
+    top: 20px;
+    right: 110px;
+}
+
+.hidden {
+  display: none;
 }

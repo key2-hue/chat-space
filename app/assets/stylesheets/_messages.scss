@@ -1,11 +1,8 @@
-
-
 .currentName {
   height: $sizeC;
   background-color: #253141;
   width: $sizeA;
   @include pLeft();
-  float: left;
   position: relative;
   &__user {
     font-size: 16px;

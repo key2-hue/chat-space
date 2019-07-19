@@ -1,9 +1,30 @@
+.all::after {
+  clear: both;
+  content: "";
+  display: block;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.bottom {
+  height: calc(100vh - 100px);
+}
+
+form {
+  position: relative;
+}
+
 .chat {
   @include pRight();
   border-bottom: 1px solid #eeeeee;
   width: $sizeB;
   position: relative;
-  left: $sizeA;
   top: 0;
   height: 100px;
   &__name {

@@ -1,0 +1,19 @@
+.all
+
+  .left
+    .currentName
+      %h3.currentName__user 
+        =current_user.name
+      =link_to new_group_path do
+        %i.currentName__user.currentName__user--edit.fa.fa-edit
+      =link_to edit_user_path(current_user) do
+        %i.currentName__user.currentName__user--cog.fa.fa-cog
+        
+
+    .group
+      - current_user.groups.each do |group|
+        = link_to group_messages_path(group), class: :"group__link" do
+          .group__name
+            = group.name
+          .group__message
+            = group.show_last_message
