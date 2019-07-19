@@ -4,6 +4,7 @@
   height: calc(100vh - 100px);
   @include pLeft();
   padding-top: 20px;
+  overflow: scroll;
   &__link {
     text-decoration: none;
   }
