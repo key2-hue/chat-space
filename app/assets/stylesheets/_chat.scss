@@ -1,0 +1,35 @@
+.chat {
+  @include pRight();
+  border-bottom: 1px solid #eeeeee;
+  width: $sizeB;
+  position: relative;
+  left: $sizeA;
+  top: 0;
+  height: 100px;
+  &__name {
+    padding-top: 35px;
+    padding-bottom: 15px;
+    font-size: 20px;
+    color: #333333;
+    margin-right: auto;
+    position: absolute;
+    left: 40px;
+  }
+  &__users {
+    @include gray();
+    margin-right: auto;
+    position: absolute;
+    bottom: 0;
+  }
+  &__edit {
+    color: skyblue;
+    height: $padA;
+    position: absolute;
+    right: $padA;
+    top: 28px;
+    border: 1px solid skyblue;
+    line-height: 40px;
+    @include pLeft();
+    text-decoration: none;
+  }
+}

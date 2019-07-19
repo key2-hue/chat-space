@@ -1,0 +1,41 @@
+.top グループを作成しました
+
+
+.currentName
+  %h3.currentName__user test-user
+  %a{:href => "#"}
+    %i.currentName__user.currentName__user--edit.fa.fa-edit
+  %a{:href => "#"}
+    %i.currentName__user.currentName__user--cog.fa.fa-cog
+    
+
+.group
+  %h3.group__name.group__name--pad test-group
+  %h4.group__comment さようなら
+  %h3.group__name sample-group
+  %h4.group__comment hello!
+  %h3.group__name example
+  %h4.group__comment まだメッセージがありません
+
+.chat
+  %h2.chat__name test-group
+  %h3.chat__users Members seo neko
+  %a.chat__edit{:href => '#'} Edit
+
+.user
+  %ul.user__name 
+    %li.user__name.user__name_user seo 
+    %li.user__name.user__name_date 2018/09/21 06:18:55
+  %h3.user__comment Hello world!
+
+  %ul.user__name
+    %li.user__name.user__name_user neko 
+    %li.user__name.user__name_date 2016/09/22 06:16:55
+  %h3.user__comment Good bye world!
+
+.submit
+  %form 
+    %input.submit__type{:placeholder => 'type a message'}
+    %a{:href => "#"}
+      %i.submit__type.submit__type--image.fa.fa-image
+    %button.submit__button{:onclick => "location.href='#'"} Send

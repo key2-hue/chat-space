@@ -1,0 +1,21 @@
+.group {
+  background-color: #2f3e51;
+  width: $sizeA;
+  float: left;
+  height: 665px;
+  @include pLeft();
+  &__name {
+    font-size: 15px;
+    @include white();
+    padding-bottom: 5px;
+    &--pad {
+      padding-top: 20px;
+    }
+  }
+
+  &__comment {
+    font-size: 11px;
+    @include white();
+    padding-bottom: 40px;
+  }
+}

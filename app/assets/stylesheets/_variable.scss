@@ -1,0 +1,32 @@
+@mixin white() {
+  font-weight: bold;
+  color: #FFFFFF;
+}
+
+@mixin gray() {
+  font-size: 12px;
+  color: #999999;
+}
+
+$black: #434A54;
+
+$back: #38AEF0;
+
+$sizeA: 300px;
+
+$sizeB: calc(100vw - 300px);
+
+$sizeC: 100px;
+
+
+$padA: 40px;
+
+@mixin pLeft () {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+@mixin pRight() {
+  padding-left: 40px;
+  padding-right: 40px;
+}
