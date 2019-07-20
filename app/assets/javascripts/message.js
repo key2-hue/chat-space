@@ -43,7 +43,7 @@ $(function() {
       var html = buildHTML(data);
       $('.messages').append(html)
       $('.submit__type').val('')
-      console.log(data); 
+      document.getElementById("new_message").reset();
       lastMessage();     
     })
     .fail(function(data) {
@@ -58,7 +58,7 @@ $(function() {
     e.preventDefault();
     alert('連続では押せません');
     $.ajax ({
-      
+
     })
     .always(function(data) {
       $('.submit__button').attr('disabled',false);
