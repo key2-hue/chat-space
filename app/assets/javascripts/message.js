@@ -42,7 +42,6 @@ $(function() {
     .done(function(data){
       var html = buildHTML(data);
       $('.messages').append(html)
-      $('.submit__type').val('')
       document.getElementById("new_message").reset();
       lastMessage();     
     })
