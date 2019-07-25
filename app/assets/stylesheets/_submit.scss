@@ -19,16 +19,16 @@
     }
   }
   &__button {
-    width: $sizeC;
     height: 50px;
     float: right;
-    margin: 0 0 0 15px;
+    padding: 15px;
     background-color: $back;
     color: white;
     font-size: 20px;
     position: absolute;
     top: 0;
     right: 0;
+    line-height: 100%;
   }
 }
 
