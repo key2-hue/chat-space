@@ -2,7 +2,7 @@
   @include pRight();
   background-color: #fafafa;
   width: $sizeB;
-  height: 576px;
+  height: calc(100vh - 200px);
   padding-top: 6px;
   overflow: scroll;
 }
