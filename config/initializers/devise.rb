@@ -11,7 +11,7 @@ Devise.setup do |config|
   # config.secret_key = '92cebebd4021814748050dcf1720587d209a3b8fc452e00da439b3de365d1c1f9a97e2ddbc27a489427a55abfff89dcf51a8adae67bc7d2921c53587ace12803'
   # config.secret_key = '24870b604a4927603ca83efd7e28bffce0c18a7f4046eda1077c1d63c7bd3185943165caf6f09e446e44c8cd2d83421e8f08c12fcc4b1090e71e4846ba7ee1c0'
   # config.secret_key = '5e236c68e1ff6bbfbc4c75fa880fb04ec10694ffbbed7f7c8b0ddb8c73921e5ce5297e2cfc97f66e3f0b7370da398f8ee8a8b45457817c8280595ddf8874f346'
-  config.secret_key_base = '4813b8ae09d3c78c68f2a6bb42c254280b4ce4c99b55b1a29cc6c812c45fa31f193af6370d24508d1624c0e65a6933345bcaeff45db9bb923693f2739a37683b'
+  config.secret_key = '4813b8ae09d3c78c68f2a6bb42c254280b4ce4c99b55b1a29cc6c812c45fa31f193af6370d24508d1624c0e65a6933345bcaeff45db9bb923693f2739a37683b'
   # config.secret_key = ENV["SECRET_KEY_BASE"]
   # config.secret_key_base = ENV['SECRET_KEY_BASE']
   # ==> Controller configuration
