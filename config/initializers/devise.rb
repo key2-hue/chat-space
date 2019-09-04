@@ -12,6 +12,7 @@ Devise.setup do |config|
   # config.secret_key = '24870b604a4927603ca83efd7e28bffce0c18a7f4046eda1077c1d63c7bd3185943165caf6f09e446e44c8cd2d83421e8f08c12fcc4b1090e71e4846ba7ee1c0'
   # config.secret_key = '5e236c68e1ff6bbfbc4c75fa880fb04ec10694ffbbed7f7c8b0ddb8c73921e5ce5297e2cfc97f66e3f0b7370da398f8ee8a8b45457817c8280595ddf8874f346'
   config.secret_key = ENV["SECRET_KEY_BASE"]
+  # config.secret_key_base = ENV['SECRET_KEY_BASE']
   # ==> Controller configuration
   # Configure the parent class to the devise controllers.
   # config.parent_controller = 'DeviseController'
