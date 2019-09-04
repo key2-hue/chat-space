@@ -85,5 +85,3 @@ Rails.application.configure do
   config.active_record.dump_schema_after_migration = false
 end
 
-AWS_ACCESS_KEY_ID: ENV["AWS_ACCESS_KEY_ID"],
-AWS_SECRET_ACCESS_KEY: ENV["AWS_SECRET_ACCESS_KEY"],
