@@ -72,8 +72,10 @@ gem 'mini_magick'
 
 group :test, :development do
   gem 'capybara'
+  gem 'sqlite3'
 end
 
 group :production do
   gem 'unicorn', '5.4.1'
+  gem 'pg'
 end
